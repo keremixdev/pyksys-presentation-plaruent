@@ -1,0 +1,22 @@
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\Booth Touchscreen App.exe.config
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth_Touchscreen_App.Form1.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth_Touchscreen_App.Properties.Resources.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth Touchscreen App.csproj.GenerateResource.Cache
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\www\index.html
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\Booth Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\Booth Touchscreen App.application
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\Booth Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\Booth Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.Core.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.WinForms.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.WinForms.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.WinForms.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.Core.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Release\CefSharp.Core.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Release\Booth Touchscreen App.application

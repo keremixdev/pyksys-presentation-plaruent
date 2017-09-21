@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.props" Condition="Exists('..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.props')" />
+  <Import Project="..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD55A45F-DBD0-4250-8233-6D1381A1D1A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Praluent</RootNamespace>
+    <AssemblyName>Praluent</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Serdar Karakaş\Desktop\JevtanaApp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>58AD25D40FF585918B83DD77AC856CD832B3C199</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Booth Touchscreen App_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>jevIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\.DS_Store" />
+    <None Include="bin\Debug\Jevtana.exe.config" />
+    <None Include="bin\Debug\Jevtana.vshost.exe.config" />
+    <None Include="bin\x64\.DS_Store" />
+    <None Include="bin\x86\.DS_Store" />
+    <None Include="bin\x86\Debug\cef.pak" />
+    <None Include="bin\x86\Debug\cef_100_percent.pak" />
+    <None Include="bin\x86\Debug\cef_200_percent.pak" />
+    <None Include="bin\x86\Debug\cef_extensions.pak" />
+    <None Include="bin\x86\Debug\debug.log" />
+    <None Include="bin\x86\Debug\devtools_resources.pak" />
+    <None Include="bin\x86\Debug\icudtl.dat" />
+    <None Include="bin\x86\Debug\Jevtana.application" />
+    <None Include="bin\x86\Debug\Jevtana.exe.config" />
+    <None Include="bin\x86\Debug\Jevtana.exe.manifest" />
+    <None Include="bin\x86\Debug\Jevtana.vshost.application" />
+    <None Include="bin\x86\Debug\Jevtana.vshost.exe.config" />
+    <None Include="bin\x86\Debug\Jevtana.vshost.exe.manifest" />
+    <None Include="bin\x86\Debug\locales\am.pak" />
+    <None Include="bin\x86\Debug\locales\ar.pak" />
+    <None Include="bin\x86\Debug\locales\bg.pak" />
+    <None Include="bin\x86\Debug\locales\bn.pak" />
+    <None Include="bin\x86\Debug\locales\ca.pak" />
+    <None Include="bin\x86\Debug\locales\cs.pak" />
+    <None Include="bin\x86\Debug\locales\da.pak" />
+    <None Include="bin\x86\Debug\locales\de.pak" />
+    <None Include="bin\x86\Debug\locales\el.pak" />
+    <None Include="bin\x86\Debug\locales\en-GB.pak" />
+    <None Include="bin\x86\Debug\locales\en-US.pak" />
+    <None Include="bin\x86\Debug\locales\es-419.pak" />
+    <None Include="bin\x86\Debug\locales\es.pak" />
+    <None Include="bin\x86\Debug\locales\et.pak" />
+    <None Include="bin\x86\Debug\locales\fa.pak" />
+    <None Include="bin\x86\Debug\locales\fi.pak" />
+    <None Include="bin\x86\Debug\locales\fil.pak" />
+    <None Include="bin\x86\Debug\locales\fr.pak" />
+    <None Include="bin\x86\Debug\locales\gu.pak" />
+    <None Include="bin\x86\Debug\locales\he.pak" />
+    <None Include="bin\x86\Debug\locales\hi.pak" />
+    <None Include="bin\x86\Debug\locales\hr.pak" />
+    <None Include="bin\x86\Debug\locales\hu.pak" />
+    <None Include="bin\x86\Debug\locales\id.pak" />
+    <None Include="bin\x86\Debug\locales\it.pak" />
+    <None Include="bin\x86\Debug\locales\ja.pak" />
+    <None Include="bin\x86\Debug\locales\kn.pak" />
+    <None Include="bin\x86\Debug\locales\ko.pak" />
+    <None Include="bin\x86\Debug\locales\lt.pak" />
+    <None Include="bin\x86\Debug\locales\lv.pak" />
+    <None Include="bin\x86\Debug\locales\ml.pak" />
+    <None Include="bin\x86\Debug\locales\mr.pak" />
+    <None Include="bin\x86\Debug\locales\ms.pak" />
+    <None Include="bin\x86\Debug\locales\nb.pak" />
+    <None Include="bin\x86\Debug\locales\nl.pak" />
+    <None Include="bin\x86\Debug\locales\pl.pak" />
+    <None Include="bin\x86\Debug\locales\pt-BR.pak" />
+    <None Include="bin\x86\Debug\locales\pt-PT.pak" />
+    <None Include="bin\x86\Debug\locales\ro.pak" />
+    <None Include="bin\x86\Debug\locales\ru.pak" />
+    <None Include="bin\x86\Debug\locales\sk.pak" />
+    <None Include="bin\x86\Debug\locales\sl.pak" />
+    <None Include="bin\x86\Debug\locales\sr.pak" />
+    <None Include="bin\x86\Debug\locales\sv.pak" />
+    <None Include="bin\x86\Debug\locales\sw.pak" />
+    <None Include="bin\x86\Debug\locales\ta.pak" />
+    <None Include="bin\x86\Debug\locales\te.pak" />
+    <None Include="bin\x86\Debug\locales\th.pak" />
+    <None Include="bin\x86\Debug\locales\tr.pak" />
+    <None Include="bin\x86\Debug\locales\uk.pak" />
+    <None Include="bin\x86\Debug\locales\vi.pak" />
+    <None Include="bin\x86\Debug\locales\zh-CN.pak" />
+    <None Include="bin\x86\Debug\locales\zh-TW.pak" />
+    <None Include="bin\x86\Debug\natives_blob.bin" />
+    <None Include="bin\x86\Debug\snapshot_blob.bin" />
+    <None Include="bin\x86\Release\.DS_Store" />
+    <None Include="bin\x86\Release\cef.pak" />
+    <None Include="bin\x86\Release\cef_100_percent.pak" />
+    <None Include="bin\x86\Release\cef_200_percent.pak" />
+    <None Include="bin\x86\Release\cef_extensions.pak" />
+    <None Include="bin\x86\Release\debug.log" />
+    <None Include="bin\x86\Release\devtools_resources.pak" />
+    <None Include="bin\x86\Release\icudtl.dat" />
+    <None Include="bin\x86\Release\Jevtana.application" />
+    <None Include="bin\x86\Release\Jevtana.exe.config" />
+    <None Include="bin\x86\Release\Jevtana.exe.manifest" />
+    <None Include="bin\x86\Release\locales\am.pak" />
+    <None Include="bin\x86\Release\locales\ar.pak" />
+    <None Include="bin\x86\Release\locales\bg.pak" />
+    <None Include="bin\x86\Release\locales\bn.pak" />
+    <None Include="bin\x86\Release\locales\ca.pak" />
+    <None Include="bin\x86\Release\locales\cs.pak" />
+    <None Include="bin\x86\Release\locales\da.pak" />
+    <None Include="bin\x86\Release\locales\de.pak" />
+    <None Include="bin\x86\Release\locales\el.pak" />
+    <None Include="bin\x86\Release\locales\en-GB.pak" />
+    <None Include="bin\x86\Release\locales\en-US.pak" />
+    <None Include="bin\x86\Release\locales\es-419.pak" />
+    <None Include="bin\x86\Release\locales\es.pak" />
+    <None Include="bin\x86\Release\locales\et.pak" />
+    <None Include="bin\x86\Release\locales\fa.pak" />
+    <None Include="bin\x86\Release\locales\fi.pak" />
+    <None Include="bin\x86\Release\locales\fil.pak" />
+    <None Include="bin\x86\Release\locales\fr.pak" />
+    <None Include="bin\x86\Release\locales\gu.pak" />
+    <None Include="bin\x86\Release\locales\he.pak" />
+    <None Include="bin\x86\Release\locales\hi.pak" />
+    <None Include="bin\x86\Release\locales\hr.pak" />
+    <None Include="bin\x86\Release\locales\hu.pak" />
+    <None Include="bin\x86\Release\locales\id.pak" />
+    <None Include="bin\x86\Release\locales\it.pak" />
+    <None Include="bin\x86\Release\locales\ja.pak" />
+    <None Include="bin\x86\Release\locales\kn.pak" />
+    <None Include="bin\x86\Release\locales\ko.pak" />
+    <None Include="bin\x86\Release\locales\lt.pak" />
+    <None Include="bin\x86\Release\locales\lv.pak" />
+    <None Include="bin\x86\Release\locales\ml.pak" />
+    <None Include="bin\x86\Release\locales\mr.pak" />
+    <None Include="bin\x86\Release\locales\ms.pak" />
+    <None Include="bin\x86\Release\locales\nb.pak" />
+    <None Include="bin\x86\Release\locales\nl.pak" />
+    <None Include="bin\x86\Release\locales\pl.pak" />
+    <None Include="bin\x86\Release\locales\pt-BR.pak" />
+    <None Include="bin\x86\Release\locales\pt-PT.pak" />
+    <None Include="bin\x86\Release\locales\ro.pak" />
+    <None Include="bin\x86\Release\locales\ru.pak" />
+    <None Include="bin\x86\Release\locales\sk.pak" />
+    <None Include="bin\x86\Release\locales\sl.pak" />
+    <None Include="bin\x86\Release\locales\sr.pak" />
+    <None Include="bin\x86\Release\locales\sv.pak" />
+    <None Include="bin\x86\Release\locales\sw.pak" />
+    <None Include="bin\x86\Release\locales\ta.pak" />
+    <None Include="bin\x86\Release\locales\te.pak" />
+    <None Include="bin\x86\Release\locales\th.pak" />
+    <None Include="bin\x86\Release\locales\tr.pak" />
+    <None Include="bin\x86\Release\locales\uk.pak" />
+    <None Include="bin\x86\Release\locales\vi.pak" />
+    <None Include="bin\x86\Release\locales\zh-CN.pak" />
+    <None Include="bin\x86\Release\locales\zh-TW.pak" />
+    <None Include="bin\x86\Release\natives_blob.bin" />
+    <None Include="bin\x86\Release\snapshot_blob.bin" />
+    <None Include="bin\x86\Release\www\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Home\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Home\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Home\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Pozoloji\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Pozoloji\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\backup\PRA_Pozoloji\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\fonts\.DS_Store" />
+    <None Include="bin\x86\Release\www\fonts\HelveticaNeue-Bold.eot" />
+    <None Include="bin\x86\Release\www\fonts\HelveticaNeue-Bold.ttf" />
+    <None Include="bin\x86\Release\www\fonts\HelveticaNeue-Bold.woff" />
+    <None Include="bin\x86\Release\www\img\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_150mg\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_150mg\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_75mg\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_75mg\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_1\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_1\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_2\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_2\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Home\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Home\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Home\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Home\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Index\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Index\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Index\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_KUB\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_KUB\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_KUB\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_KUB\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_150\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_150\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_150\media\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_75\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_75\js\.DS_Store" />
+    <None Include="bin\x86\Release\www\PRA_Pozoloji_75\media\.DS_Store" />
+    <None Include="Booth Touchscreen App_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="www\.DS_Store" />
+    <None Include="www\backup\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_mAb\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_mAb\media\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_mAb\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_PCSK9\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_PCSK9\media\.DS_Store" />
+    <None Include="www\backup\PRA_Etki Mekanizması_PCSK9\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_150mg\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_150mg\media\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_150mg\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_75mg\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_75mg\media\.DS_Store" />
+    <None Include="www\backup\PRA_Etkinlik_75mg\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik\media\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik_ikinci\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik_ikinci\media\.DS_Store" />
+    <None Include="www\backup\PRA_Güvenlilik_ikinci\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Home\.DS_Store" />
+    <None Include="www\backup\PRA_Home\media\.DS_Store" />
+    <None Include="www\backup\PRA_Home\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Sonuçlar\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Sonuçlar\media\.DS_Store" />
+    <None Include="www\backup\PRA_Odyssey_Sonuçlar\media\images\.DS_Store" />
+    <None Include="www\backup\PRA_Pozoloji\.DS_Store" />
+    <None Include="www\backup\PRA_Pozoloji\media\.DS_Store" />
+    <None Include="www\backup\PRA_Pozoloji\media\images\.DS_Store" />
+    <None Include="www\PRA_Etkinlik\.DS_Store" />
+    <None Include="www\PRA_Etkinlik\js\.DS_Store" />
+    <None Include="www\PRA_Etkinlik\media\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_150mg\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_150mg\js\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_150mg\media\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_150mg\media\images\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_75mg\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_75mg\js\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_75mg\media\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_Kapak\.DS_Store" />
+    <None Include="www\PRA_Etkinlik_Kapak\js\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_mAb\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_mAb\js\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_mAb\media\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9i\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9i\js\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9\js\.DS_Store" />
+    <None Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_1\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_1\js\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_1\media\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_1\media\images\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_2\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_2\js\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_2\media\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_2\media\images\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_1\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_1\js\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_1\media\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_1\media\images\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_2\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_2\js\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_2\media\.DS_Store" />
+    <None Include="www\PRA_Guvenlilik_KVOlay_2\media\images\.DS_Store" />
+    <None Include="www\PRA_Home\.DS_Store" />
+    <None Include="www\PRA_Home\js\.DS_Store" />
+    <None Include="www\PRA_Home\media\.DS_Store" />
+    <None Include="www\PRA_Home\media\images\.DS_Store" />
+    <None Include="www\PRA_Index\.DS_Store" />
+    <None Include="www\PRA_Index\js\.DS_Store" />
+    <None Include="www\PRA_Index\media\.DS_Store" />
+    <None Include="www\PRA_KUB\.DS_Store" />
+    <None Include="www\PRA_KUB\js\.DS_Store" />
+    <None Include="www\PRA_KUB\media\.DS_Store" />
+    <None Include="www\PRA_KUB\media\images\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\js\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Sonuclar\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Sonuclar\js\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Sonuclar\media\.DS_Store" />
+    <None Include="www\PRA_Odyssey_Sonuclar\media\images\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_150\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_150\js\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_150\media\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_75\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_75\js\.DS_Store" />
+    <None Include="www\PRA_Pozoloji_75\media\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\x64\Debug\" />
+    <Folder Include="bin\x64\Release\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_TAX327Design\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_TAX327Design\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelEfficacy_TAX327Design\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelSafety_HematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelSafety_HematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelSafety_NonHematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DocetaxelSafety_NonHematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_DurationofTreatment\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_DurationofTreatment\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_ReasonforEOT\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_ReasonforEOT\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_TreatmentCompletion\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_DOT_TreatmentCompletion\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Home\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Home\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaSafety_HematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaSafety_HematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaSafety_NonHematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaSafety_NonHematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaStructurevsDocetaxel\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaStructurevsDocetaxel\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaStructurevsDocetaxel\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Painreduction\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Painreduction\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_Painreduction\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\js\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance1\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance1\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance1\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance2\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance2\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance2\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance3\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance3\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance3\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance4\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance4\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance5\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance5\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance6\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance6\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance7\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_PrescriptionetSurveillance7\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\js\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Progressioncriteria\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Progressioncriteria\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CL_Progressionsequencing_Progressioncriteria\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_PrognosticFactors\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_PrognosticFactors\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_ARResistance_PrognosticFactors\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_DurationofTreatment\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_DurationofTreatment\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_ReasonforEOT\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_ReasonforEOT\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_TreatmentCompletion\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_DOT_TreatmentCompletion\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Home\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Home\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaSafety_HematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaSafety_HematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaSafety_NonHematologicAEs\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaSafety_NonHematologicAEs\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Painreduction\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Painreduction\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_Painreduction\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\js\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\js\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance1\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance1\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance1\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance2\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance2\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance2\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance3\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance3\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance3\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance4\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance4\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance5\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance5\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance6\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance6\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance7\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_PrescriptionetSurveillance7\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\parameters\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Progressioncriteria\media\images\thumbnails\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Progressioncriteria\media\pdf\" />
+    <Folder Include="bin\x86\Release\www\JEV_CP_Progressionsequencing_Progressioncriteria\parameters\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Home\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Index\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_KUB\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_150\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\css\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\export\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\media\html\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\media\music\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\media\videos\" />
+    <Folder Include="bin\x86\Release\www\PRA_Pozoloji_75\media\webfonts\" />
+    <Folder Include="bin\x86\Release\www\video\" />
+    <Folder Include="www\PRA_Etkinlik\css\" />
+    <Folder Include="www\PRA_Etkinlik\export\" />
+    <Folder Include="www\PRA_Etkinlik\media\html\" />
+    <Folder Include="www\PRA_Etkinlik\media\music\" />
+    <Folder Include="www\PRA_Etkinlik\media\videos\" />
+    <Folder Include="www\PRA_Etkinlik\media\webfonts\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\css\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\export\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\media\html\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\media\music\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\media\videos\" />
+    <Folder Include="www\PRA_Etkinlik_150mg\media\webfonts\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\css\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\export\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\media\html\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\media\music\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\media\videos\" />
+    <Folder Include="www\PRA_Etkinlik_75mg\media\webfonts\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\css\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\export\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\media\html\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\media\music\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\media\videos\" />
+    <Folder Include="www\PRA_Etkinlik_Kapak\media\webfonts\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\css\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\export\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\media\html\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\media\music\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\media\videos\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_mAb\media\webfonts\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\css\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\export\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\html\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\music\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\videos\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\webfonts\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\css\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\export\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\html\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\music\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\videos\" />
+    <Folder Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\webfonts\" />
+    <Folder Include="www\PRA_Guvenlilik_1\css\" />
+    <Folder Include="www\PRA_Guvenlilik_1\export\" />
+    <Folder Include="www\PRA_Guvenlilik_1\media\html\" />
+    <Folder Include="www\PRA_Guvenlilik_1\media\music\" />
+    <Folder Include="www\PRA_Guvenlilik_1\media\videos\" />
+    <Folder Include="www\PRA_Guvenlilik_1\media\webfonts\" />
+    <Folder Include="www\PRA_Guvenlilik_2\css\" />
+    <Folder Include="www\PRA_Guvenlilik_2\export\" />
+    <Folder Include="www\PRA_Guvenlilik_2\media\html\" />
+    <Folder Include="www\PRA_Guvenlilik_2\media\music\" />
+    <Folder Include="www\PRA_Guvenlilik_2\media\videos\" />
+    <Folder Include="www\PRA_Guvenlilik_2\media\webfonts\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\css\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\export\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\media\html\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\media\music\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\media\videos\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_1\media\webfonts\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\css\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\export\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\media\html\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\media\music\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\media\videos\" />
+    <Folder Include="www\PRA_Guvenlilik_KVOlay_2\media\webfonts\" />
+    <Folder Include="www\PRA_Home\css\" />
+    <Folder Include="www\PRA_Home\export\" />
+    <Folder Include="www\PRA_Home\media\html\" />
+    <Folder Include="www\PRA_Home\media\music\" />
+    <Folder Include="www\PRA_Home\media\videos\" />
+    <Folder Include="www\PRA_Home\media\webfonts\" />
+    <Folder Include="www\PRA_Index\css\" />
+    <Folder Include="www\PRA_Index\export\" />
+    <Folder Include="www\PRA_Index\media\html\" />
+    <Folder Include="www\PRA_Index\media\music\" />
+    <Folder Include="www\PRA_Index\media\videos\" />
+    <Folder Include="www\PRA_Index\media\webfonts\" />
+    <Folder Include="www\PRA_KUB\css\" />
+    <Folder Include="www\PRA_KUB\export\" />
+    <Folder Include="www\PRA_KUB\media\html\" />
+    <Folder Include="www\PRA_KUB\media\music\" />
+    <Folder Include="www\PRA_KUB\media\videos\" />
+    <Folder Include="www\PRA_KUB\media\webfonts\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\css\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\export\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\html\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\music\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\videos\" />
+    <Folder Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\webfonts\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\css\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\export\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\media\html\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\media\music\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\media\videos\" />
+    <Folder Include="www\PRA_Odyssey_Sonuclar\media\webfonts\" />
+    <Folder Include="www\PRA_Pozoloji_150\css\" />
+    <Folder Include="www\PRA_Pozoloji_150\export\" />
+    <Folder Include="www\PRA_Pozoloji_150\media\html\" />
+    <Folder Include="www\PRA_Pozoloji_150\media\music\" />
+    <Folder Include="www\PRA_Pozoloji_150\media\videos\" />
+    <Folder Include="www\PRA_Pozoloji_150\media\webfonts\" />
+    <Folder Include="www\PRA_Pozoloji_75\css\" />
+    <Folder Include="www\PRA_Pozoloji_75\export\" />
+    <Folder Include="www\PRA_Pozoloji_75\media\html\" />
+    <Folder Include="www\PRA_Pozoloji_75\media\music\" />
+    <Folder Include="www\PRA_Pozoloji_75\media\videos\" />
+    <Folder Include="www\PRA_Pozoloji_75\media\webfonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 ve x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 </ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Jevtana.vshost.exe" />
+    <Content Include="bin\x86\Debug\app.publish\Jevtana.exe" />
+    <Content Include="bin\x86\Debug\CefSharp.BrowserSubprocess.Core.dll" />
+    <Content Include="bin\x86\Debug\CefSharp.BrowserSubprocess.Core.pdb" />
+    <Content Include="bin\x86\Debug\CefSharp.BrowserSubprocess.exe" />
+    <Content Include="bin\x86\Debug\CefSharp.BrowserSubprocess.pdb" />
+    <Content Include="bin\x86\Debug\CefSharp.Core.dll" />
+    <Content Include="bin\x86\Debug\CefSharp.Core.pdb" />
+    <Content Include="bin\x86\Debug\CefSharp.Core.xml" />
+    <Content Include="bin\x86\Debug\CefSharp.dll" />
+    <Content Include="bin\x86\Debug\CefSharp.pdb" />
+    <Content Include="bin\x86\Debug\CefSharp.WinForms.dll" />
+    <Content Include="bin\x86\Debug\CefSharp.WinForms.pdb" />
+    <Content Include="bin\x86\Debug\CefSharp.WinForms.xml" />
+    <Content Include="bin\x86\Debug\CefSharp.xml" />
+    <Content Include="bin\x86\Debug\chrome_elf.dll" />
+    <Content Include="bin\x86\Debug\d3dcompiler_47.dll" />
+    <Content Include="bin\x86\Debug\Jevtana.exe" />
+    <Content Include="bin\x86\Debug\Jevtana.pdb" />
+    <Content Include="bin\x86\Debug\Jevtana.vshost.exe" />
+    <Content Include="bin\x86\Debug\libcef.dll" />
+    <Content Include="bin\x86\Debug\libEGL.dll" />
+    <Content Include="bin\x86\Debug\libGLESv2.dll" />
+    <Content Include="bin\x86\Debug\widevinecdmadapter.dll" />
+    <Content Include="bin\x86\Release\CefSharp.BrowserSubprocess.Core.dll" />
+    <Content Include="bin\x86\Release\CefSharp.BrowserSubprocess.Core.pdb" />
+    <Content Include="bin\x86\Release\CefSharp.BrowserSubprocess.exe" />
+    <Content Include="bin\x86\Release\CefSharp.BrowserSubprocess.pdb" />
+    <Content Include="bin\x86\Release\CefSharp.Core.dll" />
+    <Content Include="bin\x86\Release\CefSharp.Core.pdb" />
+    <Content Include="bin\x86\Release\CefSharp.Core.xml" />
+    <Content Include="bin\x86\Release\CefSharp.dll" />
+    <Content Include="bin\x86\Release\CefSharp.pdb" />
+    <Content Include="bin\x86\Release\CefSharp.WinForms.dll" />
+    <Content Include="bin\x86\Release\CefSharp.WinForms.pdb" />
+    <Content Include="bin\x86\Release\CefSharp.WinForms.xml" />
+    <Content Include="bin\x86\Release\CefSharp.xml" />
+    <Content Include="bin\x86\Release\chrome_elf.dll" />
+    <Content Include="bin\x86\Release\d3dcompiler_47.dll" />
+    <Content Include="bin\x86\Release\Jevtana.exe" />
+    <Content Include="bin\x86\Release\Jevtana.pdb" />
+    <Content Include="bin\x86\Release\libcef.dll" />
+    <Content Include="bin\x86\Release\libEGL.dll" />
+    <Content Include="bin\x86\Release\libGLESv2.dll" />
+    <Content Include="bin\x86\Release\widevinecdmadapter.dll" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\media\images\PRA_Etki Mekanizması_mAb.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_mAb\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\media\images\PRA_Etki Mekanizması_PCSK9.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etki Mekanizması_PCSK9\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_150mg\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Etkinlik_75mg\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik\media\images\PRA_Güvenlilik_1.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik\media\images\PRA_Güvenlilik_2.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\media\images\PRA_Güvenlilik_ikinci_1.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\media\images\PRA_Güvenlilik_ikinci_2.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Güvenlilik_ikinci\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Home\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Home\media\images\PRA_Index.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Home\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Home\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Güvenlilik.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\media\images\PRA_Odyssey_Sonuçlar.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Odyssey_Sonuçlar\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Pozoloji\index.html" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Pozoloji\media\images\PRA_Pozoloji_150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Pozoloji\media\images\PRA_Pozoloji_75.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Pozoloji\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\backup\PRA_Pozoloji\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\css\main.css" />
+    <Content Include="bin\x86\Release\www\fonts\HelveticaNeue-Bold.svg" />
+    <Content Include="bin\x86\Release\www\img\geri.png" />
+    <Content Include="bin\x86\Release\www\img\home.png" />
+    <Content Include="bin\x86\Release\www\img\ileri.png" />
+    <Content Include="bin\x86\Release\www\img\menu_bg.png" />
+    <Content Include="bin\x86\Release\www\img\menu_btn_bg.png" />
+    <Content Include="bin\x86\Release\www\img\menu_btn_bg_over.png" />
+    <Content Include="bin\x86\Release\www\img\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\img\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\index.html" />
+    <Content Include="bin\x86\Release\www\js\jquery-1.11.1.min.js" />
+    <Content Include="bin\x86\Release\www\js\vanilla.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\media\images\PRA_Etkinlik.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\media\images\PRA_Etkinlik_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_CG.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_CT.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_150mg\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_CG.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_CT.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_75mg\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\images\PRA_Etkinlik_Kapak.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etkinlik_Kapak\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\js\showNote.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\1.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\2.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\PRA_EtkiMekanizmasi_mAb.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\PRA_Etki_Mekanizması_mAb_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_mAb\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\PRA_EtkiMekanizmasi_PCSK9i.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\PRA_Etki_Mekanizması_PCSK9i_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9i\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\js\showNote.js" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\1.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\2.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\3.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\PRA_EtkiMekanizmasi_PCSK9.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\PRA_Etki_Mekanizması_PCSK9_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Etki_Mekanizmasi_PCSK9\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_1.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_P.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_1\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_2.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_P.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_2\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_1.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_CT.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_KV.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_1\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_2.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_CT.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_KV.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Guvenlilik_KVOlay_2\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Home\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Home\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Home\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Home\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Home\media\images\PRA_Home.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Home\media\images\PRA_Home_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Home\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Home\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Index\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Index\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Index\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Index\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Index\media\images\PRA_Index.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Index\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Index\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\media\images\PRA_KUB.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_KUB\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\js\showNote.js" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Guvenlilik.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Güvenlilik_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\slider.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\tablo.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Etkinlik-Güvenlilik\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar_CT.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Odyssey_Sonuclar\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_P.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_150\parameters\parameters.xml" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\index.html" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\js\jquery-1.10.2.min.js" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\js\popup.js" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\pop_bg.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\pop_icon.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\pop_menu.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_75.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_P.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_R.png" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\media\images\thumbnails\200x150.jpg" />
+    <Content Include="bin\x86\Release\www\PRA_Pozoloji_75\parameters\parameters.xml" />
+    <Content Include="jevIcon.ico" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_mAb\index.html" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_mAb\media\images\PRA_Etki Mekanizması_mAb.jpg" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_mAb\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_mAb\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_PCSK9\index.html" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_PCSK9\media\images\PRA_Etki Mekanizması_PCSK9.jpg" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_PCSK9\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Etki Mekanizması_PCSK9\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Etkinlik_150mg\index.html" />
+    <Content Include="www\backup\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg.jpg" />
+    <Content Include="www\backup\PRA_Etkinlik_150mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Etkinlik_150mg\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Etkinlik_75mg\index.html" />
+    <Content Include="www\backup\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg.jpg" />
+    <Content Include="www\backup\PRA_Etkinlik_75mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Etkinlik_75mg\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Güvenlilik\index.html" />
+    <Content Include="www\backup\PRA_Güvenlilik\media\images\PRA_Güvenlilik_1.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik\media\images\PRA_Güvenlilik_2.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Güvenlilik_ikinci\index.html" />
+    <Content Include="www\backup\PRA_Güvenlilik_ikinci\media\images\PRA_Güvenlilik_ikinci_1.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik_ikinci\media\images\PRA_Güvenlilik_ikinci_2.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik_ikinci\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Güvenlilik_ikinci\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Home\index.html" />
+    <Content Include="www\backup\PRA_Home\media\images\PRA_Index.jpg" />
+    <Content Include="www\backup\PRA_Home\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Home\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\index.html" />
+    <Content Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Güvenlilik.jpg" />
+    <Content Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Odyssey_Etkinlik-Güvenlilik\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Odyssey_Sonuçlar\index.html" />
+    <Content Include="www\backup\PRA_Odyssey_Sonuçlar\media\images\PRA_Odyssey_Sonuçlar.jpg" />
+    <Content Include="www\backup\PRA_Odyssey_Sonuçlar\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Odyssey_Sonuçlar\parameters\parameters.xml" />
+    <Content Include="www\backup\PRA_Pozoloji\index.html" />
+    <Content Include="www\backup\PRA_Pozoloji\media\images\PRA_Pozoloji_150.jpg" />
+    <Content Include="www\backup\PRA_Pozoloji\media\images\PRA_Pozoloji_75.jpg" />
+    <Content Include="www\backup\PRA_Pozoloji\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\backup\PRA_Pozoloji\parameters\parameters.xml" />
+    <Content Include="www\css\main.css" />
+    <Content Include="www\index.html" />
+    <Content Include="www\PRA_Etkinlik\index.html" />
+    <Content Include="www\PRA_Etkinlik\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etkinlik\js\popup.js" />
+    <Content Include="www\PRA_Etkinlik\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etkinlik\media\images\PRA_Etkinlik.jpg" />
+    <Content Include="www\PRA_Etkinlik\media\images\PRA_Etkinlik_R.png" />
+    <Content Include="www\PRA_Etkinlik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etkinlik\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etkinlik_150mg\index.html" />
+    <Content Include="www\PRA_Etkinlik_150mg\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etkinlik_150mg\js\popup.js" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg.jpg" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_CG.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_CT.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\PRA_Etkinlik_150mg_R.png" />
+    <Content Include="www\PRA_Etkinlik_150mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etkinlik_150mg\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etkinlik_75mg\index.html" />
+    <Content Include="www\PRA_Etkinlik_75mg\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etkinlik_75mg\js\popup.js" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg.jpg" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_CG.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_CT.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\PRA_Etkinlik_75mg_R.png" />
+    <Content Include="www\PRA_Etkinlik_75mg\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etkinlik_75mg\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etkinlik_Kapak\index.html" />
+    <Content Include="www\PRA_Etkinlik_Kapak\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etkinlik_Kapak\js\popup.js" />
+    <Content Include="www\PRA_Etkinlik_Kapak\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etkinlik_Kapak\media\images\PRA_Etkinlik_Kapak.jpg" />
+    <Content Include="www\PRA_Etkinlik_Kapak\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etkinlik_Kapak\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\index.html" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\js\popup.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\js\showNote.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\1.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\2.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\PRA_EtkiMekanizmasi_mAb.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\PRA_Etki_Mekanizması_mAb_R.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_mAb\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\index.html" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\js\popup.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\PRA_EtkiMekanizmasi_PCSK9i.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\PRA_Etki_Mekanizması_PCSK9i_R.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9i\parameters\parameters.xml" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\index.html" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\js\popup.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\js\showNote.js" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\1.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\2.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\3.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\PRA_EtkiMekanizmasi_PCSK9.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\PRA_Etki_Mekanizması_PCSK9_R.png" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Etki_Mekanizmasi_PCSK9\parameters\parameters.xml" />
+    <Content Include="www\PRA_Guvenlilik_1\index.html" />
+    <Content Include="www\PRA_Guvenlilik_1\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Guvenlilik_1\js\popup.js" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_1.jpg" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_P.png" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\PRA_Guvenlilik_Yan_Etki_R.png" />
+    <Content Include="www\PRA_Guvenlilik_1\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Guvenlilik_1\parameters\parameters.xml" />
+    <Content Include="www\PRA_Guvenlilik_2\index.html" />
+    <Content Include="www\PRA_Guvenlilik_2\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Guvenlilik_2\js\popup.js" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_2.jpg" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_P.png" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\PRA_Guvenlilik_Yan_Etki_R.png" />
+    <Content Include="www\PRA_Guvenlilik_2\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Guvenlilik_2\parameters\parameters.xml" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\index.html" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\js\popup.js" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_1.jpg" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_CT.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_KV.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\PRA_Guvenlilik_KVOlay_R.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_1\parameters\parameters.xml" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\index.html" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\js\popup.js" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_2.jpg" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_CT.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_KV.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\PRA_Guvenlilik_KVOlay_R.png" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Guvenlilik_KVOlay_2\parameters\parameters.xml" />
+    <Content Include="www\PRA_Home\index.html" />
+    <Content Include="www\PRA_Home\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Home\js\popup.js" />
+    <Content Include="www\PRA_Home\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Home\media\images\PRA_Home.jpg" />
+    <Content Include="www\PRA_Home\media\images\PRA_Home_R.png" />
+    <Content Include="www\PRA_Home\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Home\parameters\parameters.xml" />
+    <Content Include="www\PRA_Index\index.html" />
+    <Content Include="www\PRA_Index\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Index\js\popup.js" />
+    <Content Include="www\PRA_Index\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Index\media\images\PRA_Index.jpg" />
+    <Content Include="www\PRA_Index\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Index\parameters\parameters.xml" />
+    <Content Include="www\PRA_KUB\index.html" />
+    <Content Include="www\PRA_KUB\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_KUB\js\popup.js" />
+    <Content Include="www\PRA_KUB\media\images\pop_bg.png" />
+    <Content Include="www\PRA_KUB\media\images\PRA_KUB.jpg" />
+    <Content Include="www\PRA_KUB\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_KUB\parameters\parameters.xml" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\index.html" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\js\popup.js" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\js\showNote.js" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Guvenlilik.jpg" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\PRA_Odyssey_Etkinlik-Güvenlilik_R.png" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\slider.png" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\tablo.png" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Odyssey_Etkinlik-Güvenlilik\parameters\parameters.xml" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\index.html" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\js\popup.js" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar.jpg" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar_CT.png" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\PRA_Odyssey_Sonuclar_R.png" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Odyssey_Sonuclar\parameters\parameters.xml" />
+    <Content Include="www\PRA_Pozoloji_150\index.html" />
+    <Content Include="www\PRA_Pozoloji_150\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Pozoloji_150\js\popup.js" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_150.jpg" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_P.png" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\PRA_Pozoloji_R.png" />
+    <Content Include="www\PRA_Pozoloji_150\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Pozoloji_150\parameters\parameters.xml" />
+    <Content Include="www\PRA_Pozoloji_75\index.html" />
+    <Content Include="www\PRA_Pozoloji_75\js\jquery-1.10.2.min.js" />
+    <Content Include="www\PRA_Pozoloji_75\js\popup.js" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\pop_bg.png" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\pop_icon.png" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\pop_menu.png" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_75.jpg" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_P.png" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\PRA_Pozoloji_R.png" />
+    <Content Include="www\PRA_Pozoloji_75\media\images\thumbnails\200x150.jpg" />
+    <Content Include="www\PRA_Pozoloji_75\parameters\parameters.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\cef.redist.x64.3.2883.1552\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2883.1552\build\cef.redist.x64.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.3.2883.1552\build\cef.redist.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.3.2883.1552\build\cef.redist.x64.targets'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.3.2883.1552\build\cef.redist.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.3.2883.1552\build\cef.redist.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.targets'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.targets'))" />
+  </Target>
+  <Import Project="..\packages\cef.redist.x86.3.2883.1552\build\cef.redist.x86.targets" Condition="Exists('..\packages\cef.redist.x86.3.2883.1552\build\cef.redist.x86.targets')" />
+  <Import Project="..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.55.0.0\build\CefSharp.Common.targets')" />
+  <Import Project="..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.targets" Condition="Exists('..\packages\CefSharp.WinForms.55.0.0\build\CefSharp.WinForms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <meta name="format-detection" content="telephone=no">
+ <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"> 
+ 
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/popup.js" type="text/javascript" charset="utf-8"></script>
+<style>*{-webkit-tap-highlight-color: rgba(0,0,0,0); margin:0px; padding:0px;}
+		 .bubble {
+      transform: scale(0);
+      transition: all .4s;
+    }
+    
+    .bubble.animate {
+      transform: scale(1);
+    }
+    
+    @keyframes ani-bubble {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+	
+	.pdisplay{
+		position: absolute;
+		display:none;
+	}
+    
+    .popupbubble {
+      animation-name: ani-bubble;
+      animation-duration: .4s;
+    }
+	
+	    #popicon {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      zoom:.5;
+    }
+    
+    #popicon-content {
+      position: absolute;
+      bottom: 40px;
+      right: -1000px;
+      z-index: 11;
+      zoom:.5;
+    }
+	</style>
+</head>
+<body>
+<div id="popicon" class="bubble animate">
+    <a href="javascript:;"><img src="media/images/pop_icon.png"></a>
+</div>
+<div id="popicon-content">
+    <img src="media/images/pop_menu.png" usemap="#Map2" />
+    <map name="Map2">
+        <area shape="rect" coords="387,6,438,57" href="#" id="popupclose">
+        <area shape="rect" coords="6,30,376,84" href="javascript:popup('PRA_Pozoloji_P.png',0,0);" alt="Çalışma Tasarımı">
+    </map>
+</div>
+
+<img src="media/images/PRA_Pozoloji_75.jpg" width="1024" height="768" usemap="#Map" />
+<map name="Map"><area shape="rect" coords="3,683,88,765" href="javascript:popup('PRA_Pozoloji_R.png',0,0);">
+  <area shape="rect" coords="328,411,472,457" href="javascript:window.parent.navigateToSequence('PRA_Pozoloji_150','noanimation')">
+  <area shape="rect" coords="835,7,1016,111" href="javascript:window.parent.navigateToSequence('PRA_Index','noanimation')">
+</map>
+<script>
+document.ontouchmove = function (e) {e.preventDefault();};</script>
+</body>
+</html>

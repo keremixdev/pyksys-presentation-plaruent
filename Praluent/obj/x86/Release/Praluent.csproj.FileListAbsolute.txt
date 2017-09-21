@@ -1,0 +1,13 @@
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Jevtana.Form1.resources
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Praluent.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Praluent.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Praluent.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Praluent.exe
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Jevtana\obj\x86\Release\Praluent.pdb
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Jevtana.Form1.resources
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.exe
+C:\Users\Lenovo\Desktop\Sunum\Praluent\Praluent\obj\x86\Release\Praluent.pdb

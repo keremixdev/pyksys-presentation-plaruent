@@ -1,0 +1,349 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body style="overflow:hidden;width:1920px;height:1080px;">
+    <div id="wrap">
+        <div class="leftMenuCont  senario1 active">
+            <div class="sectionSelectionMenu">
+                <div class="mSectionBtn ms1 senario1 active" data-senario="senario1"></div>
+                <div class="mSectionBtn ms2 senario2" data-senario="senario2"></div>
+            </div>
+            <div class="leftMenu">
+                <!-- options goes here -->
+            </div>
+
+            <div class="bottom-menu">
+                <a href="javascript:home();" id="home"></a>
+                <a href="javascript:prv();" id="prev"></a>
+                <a href="javascript:nxt();" id="next"></a>
+            </div>
+        </div>
+
+        <div id="frm"></div>
+        <!--  <div class="bckToFrst">
+          BACK
+      </div>-->
+
+    </div>
+    <div class="frstScreen" style="display:none;">
+        <!--<video src="video/bgvideo.webm" autoplay="autoplay" loop="loop" style="width: 1920px; height: 1080px;">
+
+    </video>-->
+
+
+        <!-- <div class="senario s1" data-senario="senario1"></div>
+     <div class="senario s2" data-senario="senario2"></div>
+     <div class="senario s3" data-senario="senario3"></div>
+ -->
+    </div>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        var nxt;
+        var prv;
+        var idle;
+        var home;
+
+        json = {
+            "presentation": {
+
+                "senario1": [
+                    {
+                        "url": "PRA_Index",
+                        "name": "combo 1",
+                        "section": ""
+                    },
+                    {
+                        "url": "PRA_Home",
+                        "name": "combo 1",
+                        "section": ""
+                    }
+                    ,
+                    {
+                        "url": "PRA_Etkinlik_Kapak",
+                        "name": "combo 1",
+                        "section": "Etkinlik"
+                    }
+                    ,
+                    {
+                        "url": "PRA_Etkinlik",
+                        "name": "combo 1",
+                        "section": "Etkinlik"
+                    },
+                    {
+                        "url": "PRA_Etkinlik_75mg",
+                        "name": "combo 1",
+                        "section": "Etkinlik"
+                    },
+                    {
+                        "url": "PRA_Etkinlik_150mg",
+                        "name": "combo 1",
+                        "section": "Etkinlik"
+                    },
+                    {
+                        "url": "PRA_Etki_Mekanizmasi_PCSK9",
+                        "name": "combo 1",
+                        "section": "Etki Mekanizması"
+                    },
+                    {
+                        "url": "PRA_Etki_Mekanizmasi_PCSK9i",
+                        "name": "combo 1",
+                        "section": "Etki Mekanizması"
+                    },
+                    {
+                        "url": "PRA_Etki_Mekanizmasi_mAb",
+                        "name": "combo 1",
+                        "section": "Etki Mekanizması"
+                    },
+                    {
+                        "url": "PRA_Odyssey_Etkinlik-Güvenlilik",
+                        "name": "combo 1",
+                        "section": "Odyssey"
+                    },
+                    {
+                        "url": "PRA_Odyssey_Sonuclar",
+                        "name": "combo 1",
+                        "section": "Odyssey"
+                    },
+                    {
+                        "url": "PRA_Guvenlilik_1",
+                        "name": "combo 1",
+                        "section": "Güvenlilik"
+                    },
+                    {
+                        "url": "PRA_Guvenlilik_2",
+                        "name": "combo 1",
+                        "section": "Güvenlilik"
+                    },
+                    {
+                        "url": "PRA_Guvenlilik_KVOlay_1",
+                        "name": "combo 1",
+                        "section": "Güvenlilik"
+                    },
+                    {
+                        "url": "PRA_Guvenlilik_KVOlay_2",
+                        "name": "combo 1",
+                        "section": "Güvenlilik"
+                    },
+                    {
+                        "url": "PRA_Pozoloji_75",
+                        "name": "combo 1",
+                        "section": "Pozoloji"
+                    },
+                    {
+                        "url": "PRA_Pozoloji_150",
+                        "name": "combo 1",
+                        "section": "Pozoloji"
+                    },
+
+                    {
+                        "url": "PRA_KUB",
+                        "name": "combo 1",
+                        "section": "KÜB"
+                    }
+                ]
+            }
+        };
+
+
+
+
+        $(document).ready(function () {
+
+            //  document.addEventListener('contextmenu', event => event.preventDefault());
+
+            $(document).on('click', '#popicon', function () {
+                var u = $('#popicon-content');
+                u.show().css({ opacity: 0, right: -u.width() }).animate({ opacity: 1, right: 20 }, 400);
+                $(this).toggleClass('animate');
+            });
+
+            $(document).on('click', '#popupclose', function () {
+                var u = $('#popicon-content');
+                u.animate({ opacity: 1, right: -(u.width() + 30) }, 400, function () {
+                    $('#popicon').toggleClass('animate');
+                });
+            });
+
+            $(document).on('focusin', 'a', function () {
+                $(this).blur();
+            });
+
+            $(document).on('click', 'area', function () {
+                $(this).blur();
+            });
+
+            init('senario1');
+            function init(mSenario) {
+
+                sliderArr = [];
+                sectionArr = [];
+                senario = mSenario;
+                $(".leftMenu").html("");
+                presentations = json.presentation[senario];
+                $.each(presentations, function (i, v) {
+                    sliderArr.push(v.url);
+                    if ($.inArray(v.section, sectionArr) == -1) {
+                        sectionArr.push(v.section);
+                        $(".leftMenu").append('<div class="loption ' + (i == 0 ? 'seperator' : '') + '" data-lnk="' + v.url + '" data-section="' + v.section + '"><span>' + v.section + '</span></div>');
+                    }
+                });
+                sequences = sliderArr;
+                active = sliderArr[0];
+                navigate(active);
+
+            }
+
+
+            nxt = function () {
+                activeIndex = $.inArray(active, sequences);
+                if (activeIndex < (sequences.length - 1)) {
+                    active = sequences[activeIndex + 1];
+                    //console.log("act : " + active);
+                    navigate(active);
+                }
+            }
+            prv = function () {
+                activeIndex = $.inArray(active, sequences);
+                if (activeIndex > 0) {
+                    active = sequences[activeIndex - 1];
+                    navigate(active);
+                }
+            }
+
+            home = function () {
+                navigate(json.presentation[senario][0].url);
+            }
+
+            $(document).on('focus', 'img, area, map', function (event) {
+                $(this).blur();
+            });
+
+
+            function showAndHide(item, isShow) {
+                $(item).css({
+                    opacity: isShow ? 1 : .4,
+                    'pointer-events': isShow ? 'auto' : 'none'
+                })
+            }
+
+            function navigate(url) {
+                activeIndex = $.inArray(url, sequences);
+                active = sequences[activeIndex];
+
+                clearTimeout(idle);
+                idle = setTimeout(function () {
+                    /*active = "ALI_Opening";
+                     navigate(active);*/
+                    //console.log("idle");
+                    if ($(".senario1").hasClass("active")) {
+                        console.log("Senaro 1 loaded");
+                        loadSenarios("senario1");
+                    } else {
+                        console.log("Senaro 2 loaded");
+                        loadSenarios("senario2");
+                    }
+                    //init("senario1");
+                }, 300000);
+                ai = $.inArray(url, sequences);
+
+                showAndHide('#prev', true);
+                showAndHide('#next', true);
+
+                $('#next').show();
+                if (ai == 0) {
+
+                    showAndHide('#prev', false);
+                }
+
+                if (ai == (sequences.length - 1)) {
+                    showAndHide('#next', false);
+                }
+
+                var urlarr = url.split('/');
+                if (urlarr.length < 2) {
+                    uri = url + '/index.html';
+                    urf = url;
+                } else {
+                    uri = url;
+                    urf = urlarr[0];
+                }
+                $.get(uri, function (data) {
+                    ratio = 1.408;
+                    data = data.replace(/media\//g, urf + '/media/');
+                    data = data.replace(/js\//g, urf + '/js/');
+                    data = data.replace('\<script src\="' + urf + '\/js\/jquery-1.10.2.min.js" type\="text/javascript" charset="utf-8"\>\<\/script\>', '');
+                    data = data.replace(/css\//g, urf + '/css/');
+                    $('#frm').html(data);
+                    $('#frm').css('zoom', ratio);
+                });
+
+                $.each(presentations, function (i, v) {
+
+                    if (v.url == active) {
+                        $(".loption").removeClass("active");
+                        $('[data-section="' + v.section + '"]').addClass("active");
+                        return;
+                    }
+                });
+            }
+
+            $(document).on('click', '.nav', function (event) {
+                event.preventDefault();
+                active = $(this).attr('href');
+                navigate($(this).attr('href'));
+            });
+
+            $(document).on('click', '.loption', function (event) {
+                event.preventDefault();
+                active = $(this).data('lnk');
+                navigate($(this).data('lnk'));
+            });
+
+
+            function loadSenarios(senarioName) {
+                init(senarioName);
+                $(".mSectionBtn").removeClass("active");
+
+                $(".leftMenuCont").removeClass("senario1");
+                $(".leftMenuCont").removeClass("senario2");
+                $(".leftMenuCont").addClass(senarioName);
+
+                $("." + senarioName).addClass("active");
+                //$(".frstScreen").fadeOut();
+            }
+
+            $(document).on('click', '.mSectionBtn', function (event) {
+                loadSenarios($(this).data('senario'));
+            });
+
+
+            $(document).on('click', '.bckToFrst', function (event) {
+                //$(".frstScreen").fadeIn();
+            });
+
+
+            window.parent.navigateToSequence = function navigateToSequence(x, y) {
+                //console.log("x : " + x + "-- Y: " + y);
+                navigate(x);
+            }
+
+            window.parent.PDFHelper = {};
+            window.parent.PDFHelper.OpenPDF = function OpenPDF(pdf) {
+                // console.log("pdf : " + pdf);
+            }
+        });
+    </script>
+</body>
+
+</html>

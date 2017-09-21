@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <meta name="format-detection" content="telephone=no">
+ <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"> 
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/popup.js" type="text/javascript" charset="utf-8"></script>
+<style>*{-webkit-tap-highlight-color: rgba(0,0,0,0); margin:0px; padding:0px;}</style>
+</head>
+<body>
+<img src="media/images/PRA_Etkinlik.jpg" width="1024" height="768" usemap="#Map" />
+<map name="Map">
+  <area shape="rect" coords="250,210,996,431" alt="75mg" href="javascript:window.parent.navigateToSequence('PRA_Etkinlik_75mg','noanimation')">
+  <area shape="rect" coords="512,443,1000,663" alt="150mg" href="javascript:window.parent.navigateToSequence('PRA_Etkinlik_150mg','noanimation')">
+  <area shape="rect" coords="7,670,112,762" href="javascript:popup('PRA_Etkinlik_R.png',0,0)" alt="etkinlik kapak">
+  <area shape="rect" coords="848,20,1016,105" href="javascript:window.parent.navigateToSequence('PRA_Index','noanimation')">
+</map>
+<script>
+document.ontouchmove = function (e) {e.preventDefault();};</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.exe.config
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\www\index.html
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\www\video\bgvideo.webm
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.application
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.Core.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.WinForms.dll
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.WinForms.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.WinForms.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.Core.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\bin\x86\Debug\CefSharp.Core.xml
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.csprojResolveAssemblyReference.cache
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Booth_Touchscreen_App.Form1.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana_Touchscreen_App.Properties.Resources.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.csproj.GenerateResource.Cache
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.application
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Jevtana Touchscreen App\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Booth Touchscreen App\bin\x86\Debug\Jevtana Touchscreen App.exe.config
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.exe
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Booth Touchscreen App\obj\x86\Debug\Jevtana Touchscreen App.pdb

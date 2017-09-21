@@ -1,0 +1,24 @@
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth_Touchscreen_App.Form1.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth_Touchscreen_App.Properties.Resources.resources
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.csproj.GenerateResource.Cache
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\Booth Touchscreen App.exe.config
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\www\index.html
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\Booth Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\Booth Touchscreen App.application
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\Booth Touchscreen App.exe
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\Booth Touchscreen App.pdb
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.csprojResolveAssemblyReference.cache
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.exe.manifest
+C:\Users\Serdar Karakaş\Documents\Visual Studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\obj\x64\Debug\Booth Touchscreen App.application
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.Core.dll
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.dll
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.WinForms.dll
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.WinForms.pdb
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.WinForms.xml
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.pdb
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.xml
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.Core.pdb
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\CefSharp.Core.xml
+C:\Users\Serdar Karakaş\documents\visual studio 2015\Projects\Booth Touchscreen App\Booth Touchscreen App\bin\x64\Debug\www\video\bgvideo.webm

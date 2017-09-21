@@ -1,0 +1,29 @@
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\Jevtana.exe.config
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\Jevtana.exe.manifest
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\Jevtana.application
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\Jevtana.exe
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\Jevtana.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.Core.dll
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.dll
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.WinForms.dll
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.WinForms.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.WinForms.xml
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.xml
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.Core.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\bin\x86\Release\CefSharp.Core.xml
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.Form1.resources
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.Properties.Resources.resources
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.csproj.GenerateResource.Cache
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.exe.manifest
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.application
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.exe
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.pdb
+C:\Users\Serdar Karakaş\Desktop\Jevtana\Jevtana\obj\x86\Release\Jevtana.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.Form1.resources
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.exe
+C:\Users\Lenovo\Desktop\Sunum\Jevtana\Jevtana\obj\x86\Release\Jevtana.pdb

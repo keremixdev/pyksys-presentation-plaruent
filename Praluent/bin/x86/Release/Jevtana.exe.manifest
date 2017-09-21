@@ -1,0 +1,2361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Jevtana.exe" version="1.0.0.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="jevIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Jevtana" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Jevtana.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.dll" size="178688">
+      <assemblyIdentity name="CefSharp" version="55.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qahnpr1BV5z/TDaZL8HulvhEvuMb1t7otRWA4H0XRUY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.Core.dll" size="1240576">
+      <assemblyIdentity name="CefSharp.Core" version="55.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>paRH0TrrMr5IxS/T+x+B2thGr81lOmk4FZ6qbSoCC4I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.WinForms.dll" size="22528">
+      <assemblyIdentity name="CefSharp.WinForms" version="55.0.0.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>t8i1oB1JaWSj3jEhgY7ert/zMSnDq8jhezODu4n/Qfs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Jevtana.exe" size="379392">
+      <assemblyIdentity name="Jevtana" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4JxknnnBW0tMElePJ5VKE60X/5H94/oD2J2mXzWBqms=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="jevIcon.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JtaapeilCGnK5+GIKW21NBj0C1bz9G0CXSBBm51bV4o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Jevtana.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\fonts\FuturaBT-Book.svg" size="105856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K1ZaF0v7gmc971W9ydXJMSHl3akTQWhHzlaX+hwuw5E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\arr.png" size="427">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Te8r+Z//anfgMF6culkSNuKiGarYLL8dvNgfXFgUldk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\bg.png" size="83864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lfOfiWoivM68z7MWbbrV2WMJzu9S4VN/jJo2F473q+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\c_home.png" size="17277">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t9DU2hhVutqq2u5GKs+lF7ds0NzPTIRSLKM/uuo1hRA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\c_home_active.png" size="17284">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hMWHGgtQ3NZ6pa6pcIxJcQqoQMniAhjI4j/K/5G6ZHg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\COption.png" size="478">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tw8Ah1vUizoNSNIQ9biWwUm7YhmE75aUXY4+cWpvv3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\COption_selected.png" size="467">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ap1L+UnAWl1qyVdDf6THk+58EAWxbbkf+CoUsHo8qWo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\h_home.png" size="17308">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UjMOfmocqxVECB3mmBwIqWDDEvsgIwMMZ5GZNgiND0s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\h_home_active.png" size="17263">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uzvb5jrQFKJcKRABs1FROdugpTAWXI5U5dpJ0qCfEak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\home.png" size="508">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eOCSI/A7/tDzHd0IPWm9fggHkqUqzFAr8o71ux+3bOg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\home_selected.png" size="489">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4AftjixQmzTWnzFABh06r2bjpeOuXOkT7+3yW+aec9M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\HOption.png" size="504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CHvGwtP9yk2xPzKP449aOCdIapy11HKiWNhqTncPRUA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\HOption_selected.png" size="442">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HuZbLr/x68f0In0S7j1asmZ9iAFcnAjWuz1Jegjj61Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\menu_bg.png" size="50942">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qAm5FH0v87ixOUpBknY/XZFpjTTuIqq55iO2lEUraIs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\rra.png" size="417">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Xd+Cn2d8LOZLrnHU0nz/jXhH0QAPccKklJpznPVAb/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\section1.png" size="1178">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0tdlDiujlfeISlqK6wxiiPvH94JqllgPBwTux20vH8M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\section1_active.png" size="1200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oN6mMFM3TUPlwrrX/HOaJ7CdbcYLEJMVkcjemNQ8h+U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\section2.png" size="392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YVoY4yND3fmpg1QgwgL7YIaErpZOAKujbgPsV9xUAEU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\img\section2_active.png" size="394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yFUBV1pOtZgZBGcMvl+MQSS5+esrxO5MkQTmHaiCjQI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\index.html" size="23950">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z91p86k07muRMvh1H1GmkDankTTgAHWyYiF0sCg/jTk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\index.html" size="1452">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f4/Hdf2sT/MxWLp5C9MtaPT9mPlEvmLfT0ZL37OZuKI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\media\images\JEV_CL_DocetaxelEfficacy_3-yearssurvival.png" size="585385">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D12hDopLEeay2mMjWyCtHWhYzyVXB37mY5g86bx4ZD0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\media\images\thumbnails\200x150.jpg" size="32880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Kv+5bS65IgvYcr1xq7K0Cbi93o1Niiap7KkrL6jy5kA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_3-yearssurvival\parameters\parameters.xml" size="196" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eqEqONWA5logYxGKZAEQFIOEX8lgObkA42zqfUOOBU8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_TAX327Design\index.html" size="1433">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m7tvH/AOefJrFhnm7JjUBVJ2Hkc1A/k8FoBbfRy0oRk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_TAX327Design\media\images\JEV_CL_DocetaxelEfficacy_TAX327Design.png" size="595514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vLvX6JbR94dNMpOW/vnFWT4XaoJjkGryCTWTRWgCZ8U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_TAX327Design\media\images\thumbnails\200x150.jpg" size="33629">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ipdInOHyIBIBFj3yzP7ax+yt8m3DUP38c/CIypBaNQA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelEfficacy_TAX327Design\parameters\parameters.xml" size="193" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cA93tIT3+8qk8PVXpMA97kAhqmrvimU4sKkLI/Q12C0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_HematologicAEs\index.html" size="1280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kxQx3N/hibEA5fMn9jJDMnOGdesJmAkPBfzyXHlLr+M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_HematologicAEs\media\images\JEV_CL_DocetaxelSafety_HematologicAEs.png" size="552612">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>v4OhnBRBftF/z3GEGIQZBJxp4KOrDPvA8Yj69kO1QJA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_HematologicAEs\media\images\thumbnails\200x150.jpg" size="35748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QKAn3jKcJ+mnRPag1hJUg4v2Sui5SuqV9jopK/LB+uo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_HematologicAEs\parameters\parameters.xml" size="193" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dvmAiRCvwEcOTSN3Q5DdQpq0BE56XWhuyZ3Xe02QxBI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_NonHematologicAEs\index.html" size="1289">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eMuYpjNKOnXbNG9jUwc0tdHpIYsRQoVnhOQrDk2YuEs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_NonHematologicAEs\media\images\JEV_CL_DocetaxelSafety_NonHematologicAEs.png" size="610639">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7JjSDVIE4VyWc793CPhCklDXv5cWVr2oH9+xBnrMzno=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_NonHematologicAEs\media\images\thumbnails\200x150.jpg" size="40133">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>08OKVsZ35+48ex4IYzId2WoyBLRjF6OqZpu0H79SzdA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DocetaxelSafety_NonHematologicAEs\parameters\parameters.xml" size="196" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>poogkCSCB+VOOjJ8BdcbnglfQ1NZArLXe6Z0Ge/uKH8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_DurationofTreatment\index.html" size="1376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kpTpUSUkh9Uxe2fSYgXGD8C5VL7O+WhMpt9NoeiJeMY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_DurationofTreatment\media\images\JEV_CL_DOT_DurationofTreatment.png" size="549811">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8vLR+DljR/sIfIHfJNEW4FrFIHzD7DZr5cnPXUUy1dg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_DurationofTreatment\media\images\thumbnails\200x150.jpg" size="36305">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1SwqzC9SepFIpnhm8wws7qYS+lTbG0WRf+yfC9v4oE0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_DurationofTreatment\parameters\parameters.xml" size="186" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l4fNf2Fz1looN8ol2wKQQpfB0LpA2H09N1HD2Hk7yCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_ReasonforEOT\index.html" size="1355">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jEct45gJ4yHtsUr0cBZhN6W+eSfOCEW4WxxcqIaD0DI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_ReasonforEOT\media\images\JEV_CL_DOT_ReasonforEOT.png" size="530648">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g8Q6glGW4O47y1O5gECl8tWpEtOv5iJK5IyV1OrQ0Jk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_ReasonforEOT\media\images\thumbnails\200x150.jpg" size="33086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1I1/vYke0lnwxsiHJ/rfijmKUB6EWPvWWWN3ON2yX3A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_ReasonforEOT\parameters\parameters.xml" size="179" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hBCavTowuKXRSZNFgrrGSpf0yf9P3jAqQ0Ue7n0/Yek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_TreatmentCompletion\index.html" size="1376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>78Ei0VnHBSQ7kd6uhNvfH9WJ4zLgPUv4t/xEePLJopQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_TreatmentCompletion\media\images\JEV_CL_DOT_TreatmentCompletion.png" size="538407">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>evZwGd2/Y4rWWJfvZQx/YpHdWIDlO3vfXPt1jwHe0Co=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_TreatmentCompletion\media\images\thumbnails\200x150.jpg" size="38250">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1q/OtTGeD39XFVNSEz3n8YM7feOwiTVbYuwmTFn0+24=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_DOT_TreatmentCompletion\parameters\parameters.xml" size="186" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t9FGPnAHw8ZZUV7yhOKjz52/HsHIwqT5XCNNLMk2xfo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Home\index.html" size="2108">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wpXLjKi11+Jz4Z529v7zE4v4vpozDQuhcm6rSLiUAic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Home\media\images\JEV_CL_Home.png" size="2905341">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/2MJxHF1A8e2Vg0GPhc9hcemLpgKOpyDb+l7OqKx3QQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Home\media\images\thumbnails\200x150.jpg" size="34031">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XE/q62+4I0GrSHYNXrnnwAoYQVw0dzAzENsmEwHqb+E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Home\parameters\parameters.xml" size="167" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vF6ndm/GkVP1kB00RPHWDU0KaMr17T3qt34UvANNHNc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_HematologicAEs\index.html" size="1260">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7Bks0GySjqQUXzDzYa4UjlV+OgRD6HpaeHoXnJSND6Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_HematologicAEs\media\images\JEV_CL_JevtanaSafety_HematologicAEs.png" size="607269">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QE0D+ahOkfbtul4w9iS4fINin5Br6x3w39xGC4UD8Sc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_HematologicAEs\media\images\thumbnails\200x150.jpg" size="43242">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L/muvGglXwLeYKNqL4QVUvIP6ciUp9j7kcds/n8Noeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_HematologicAEs\parameters\parameters.xml" size="191" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZO4N2mQtC7Itz45u/X+9VPfcH+20BRXB4PnS3KlGzwM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_NonHematologicAEs\index.html" size="1269">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>99wLcNqYRJ2j20pksQUP7vU6CPqcLdEBghacGexDJMI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_NonHematologicAEs\media\images\JEV_CL_JevtanaSafety_NonHematologicAEs.png" size="683782">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nQRfRYmpdp84rjpzyUz1vjkCJFRQZSQJfVglAq8/yqU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_NonHematologicAEs\media\images\thumbnails\200x150.jpg" size="40581">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qE/ZRJ+avv6pkB24qJD/lfB/+znXMvOVdQd1mwbNO1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaSafety_NonHematologicAEs\parameters\parameters.xml" size="194" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jf3QG19lb2QTPPNvuxluoAv5sbH3jzbwdW0yuTWH+wg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel\index.html" size="1570">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a+KrOodVzBb02pKJbRIu1mfF8LR1Ifp27+wevlXBQqs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel\media\images\JEV_CL_JevtanaStructurevsDocetaxel.png" size="596753">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>H/s5uESvb5OJMcrE09wRDnHfubV0ARt81VSwrTo70kA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel\media\images\thumbnails\200x150.jpg" size="30335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a3UQKDlXSKQyYIYaNNd8/AiqYi33xoVIag04Ls/32bY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u1PO3EGn39eBuKrmtlhCKSKI09pm05LiVUaqqHMgmJA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\index.html" size="1344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IPQZZvml7T6eQZzKuaWxp7j+/StvBiiIPuhMspN75o8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria.png" size="529645">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fHofRHHpkTYmAF9RheQSY6n/RghnlB+vfqmi8Q0xOA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\thumbnails\200x150.jpg" size="33327">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PlVI/umfLYo0+8KUnQxEa8wJJ263UhJyQ4q8DK2/koc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_JevtanaStructurevsDocetaxel_DifferentationCriteria\parameters\parameters.xml" size="213" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i/PV0iEpp7pff7kj9FnrtSa+/WIpUYpwGTEvzzbHvHo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\index.html" size="1793">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>adhl49Aju1wdfQseB7pVEGTw4VQE1TzF16vNLnBkpGE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\media\images\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits.png" size="582953">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LV8qYeU/35Ht517LJeSfEBxoLFDGqdA2Rih7OoXUlPY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\media\images\thumbnails\200x150.jpg" size="32627">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wB2/67lk6S+ShtiAm3mSRprUaEnTxxoWEATF2saNrq4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Jevtanabenefits\parameters\parameters.xml" size="202" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AGimpwpF1kPwgcGIypdeNYWme0dYJUIM9E1hwcVR7IE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\index.html" size="1787">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dYpjapEJzDBGG6VNdzFys1pVsyJMt7vkY2FQP6K+qXA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\media\images\JEV_CL_Morethansurvivalbenefit_MaintainedQOL.png" size="514444">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gV3P3y5cgsPx2VpWzmqg9Mwdf56IEARvNZjIqve+cY4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\media\images\thumbnails\200x150.jpg" size="26891">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Xjfz1GNVDGJnAm/X4Rn0fdL4k1AKxjuMYyuP+doP0ew=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_MaintainedQOL\parameters\parameters.xml" size="200" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HuJed5WIP+9hswOyaIbb9ZrsMkQzqO88fd3aGOvwH2c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\index.html" size="1975">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7K/3FpDkB3thi5bWWPhvFo1pi6pE8YpJ64HsQALER+s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\media\images\JEV_CL_Morethansurvivalbenefit_Overallsurvival.png" size="571153">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IPo6uX8Egpx/PRg0D95IS64nGyRNA/X9BfOnkiMG4N8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\media\images\thumbnails\200x150.jpg" size="34583">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1AD0M4PozGKHyt68TuelDksxmBRBNw68HSESNiLMghk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Overallsurvival\parameters\parameters.xml" size="202" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VVGOXLa4yCjdpTPoYyPlNwBIbfc2Zd+P7yic8hFx5MI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Painreduction\index.html" size="1930">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q8ruKZqMi+VIaO/9xVMip3Vh2cv43FXDBX8KBS/RIBU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Painreduction\media\images\JEV_CL_Morethansurvivalbenefit_Painreduction.png" size="623750">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hGtgjG+i2YbmoLEaNtEa1+v77WSIsD9o/f7+vFsg5qc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Painreduction\media\images\thumbnails\200x150.jpg" size="34986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M+Xm7DryUbXq9e9jkIvWF1nd2u3drJjtTrwYCDwkJLI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_Painreduction\parameters\parameters.xml" size="200" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/qT6qAQ3pGv8nc1e3OaWmOFu0gBc90jtRPLrbghAZBM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\index.html" size="2236">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HLFivGOl9nEZIhTc9H5E6c1zMNeXdE6XuZiftaNTejE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\js\jquery-1.10.2.min.js" size="93107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\js\popup.js" size="670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZA6mc4nMsmTMk2e8ISnvLX/MGIsQ8g0CNX6dlrliv1I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\media\images\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign.png" size="685878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bFahYJZ3QT2ZgB6hKM3V+LxDD6SY5RTBpM6iBBUp+Yc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\media\images\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign_P.png" size="385297">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LlRmNZyi2RIDOYe1u4UV+CtUPmGTCpbmWzOOgO7uz5g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\media\images\thumbnails\200x150.jpg" size="29841">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AFgUgb2Y6CEczYsDFLAuQgbd2tvlPWU0y6XE7MaxQUM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Morethansurvivalbenefit_TROPICStudyDesign\parameters\parameters.xml" size="204" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XOgj56yD79lPeb4KiE23GKv5zrKMXlDBtC6gp8b2jbA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance1\index.html" size="1104">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RhrCjAhkGjC0xW26vHJOi79qxFOyxR9GnB7H12gJ0U0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance1\media\images\JEV_CL_PrescriptionetSurveillance1.png" size="531805">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kJDuCd6NX0xpUjyQxcubK6XJY5PWRq1GPbVvO6FLAc4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance1\media\images\thumbnails\200x150.jpg" size="31355">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c/rbI/0zwcj0GbQ318ELczMdUPCtdAz0I0m2BH0qNbM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance1\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IQfSISXJ64vW4mlWvyTCv5j+PQYf0M8SJaiCtL6yMJ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance2\index.html" size="1106">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lE8LYKWm2IywqpkhIkOGeH9N0ozJi7sWKAMuv6wx6Cc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance2\media\images\JEV_CL_PrescriptionetSurveillance2.png" size="591174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bnchnZ2s+5Dsbvf0KEFh1nfYvseqPR0jsPtv7+j8psg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance2\media\images\thumbnails\200x150.jpg" size="34770">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Z4epZzAtPQmuzKHzbmI2dWb6poYGfW/x7x5ZDaoKdgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance2\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tHS3T8w1nMkpXwv+fs4AoneYFA+HeXqGiNsnSOmDXuQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance3\index.html" size="1106">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7szB4ghWwft8wWQa7tKJdMF4hyWv4+C7ftlYZwfZ4mY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance3\media\images\JEV_CL_PrescriptionetSurveillance3.png" size="576228">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vPIRDRYR+14AxgCzKOLhCkyJdnbM0RkGa8LIKMqeCEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance3\media\images\thumbnails\200x150.jpg" size="29299">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mV2AFJWIuPNqM+mFu9VVoFvowfWv6dyWxeOjWGS+xOs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance3\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qphGrKUQ9ZShH1zR0yh/Sw9r6pUlNZIOcWr+m57zb0c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance4\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m5q6HyFjZiFRpF9R7GUkX++vvBJTstbIQJUjOSkHkEE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance4\media\images\JEV_CL_PrescriptionetSurveillance4.png" size="634584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zSmgPnDkESpqbgim/ivXEerjDtRtDJT0ZS6mdPBObfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance4\media\images\thumbnails\200x150.jpg" size="35658">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aGPZaiXBEMNGDUuW8JaEC/5Ok+nMKKpkKQYy+3J6YJQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance4\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Lv9EJrrQAazYjL9MZKFc1PYECpI5HBWk3x+pGNDhzr4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance5\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pZ84PZ1+77Qof+g/fVznhHJcMf7Zf402Xb6ej2FVBWY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance5\media\images\JEV_CL_PrescriptionetSurveillance5.png" size="651392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7VgSqFu/7ocw50IyZd0pMCvakR7cSSi6CW0g4InJoaE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance5\media\images\thumbnails\200x150.jpg" size="35693">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mwIqrAcmoOocqew+XkLSbTCfHONOeGT6qUZjm6gm3m8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance5\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DNhpRZzH013EFcEWvQrRbqgDDnTH60lcsWU8ahPgRsQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance6\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OgK6O4CAN83cliuWNXHorBLGj9CRSIn/sjzrkUXex4U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance6\media\images\JEV_CL_PrescriptionetSurveillance6.png" size="655257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OeDG4RS1qXDSBBH193aH6ZOK1h3Q7r01VC4oQZNghkE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance6\media\images\thumbnails\200x150.jpg" size="32811">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NZ905elzPk/5JmWjxNu04NIq9Aq8cD2OznfYg7eMsHM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance6\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a+1p6mU6Kv+V6ATxrFc4JzSZTqPm4tSbS5HKcztheMU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance7\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uvYII7IaqD5HO1NVHD/g0E6SitFEhSWCDPDr6DrFKL4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance7\media\images\JEV_CL_PrescriptionetSurveillance7.png" size="614670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tQfbaLoZrlcdGDuNcRMrL2RJpQZbND4MN558qw3uRo0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance7\media\images\thumbnails\200x150.jpg" size="30522">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JSEvXgmDi5FqHF7HIQGv8q3ZnklKjChtAO4okASYuro=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_PrescriptionetSurveillance7\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CuWbof6xPHZI42dfExwxxpV98+nD9/4ISIY7eSSLBHs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\index.html" size="1633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4TdMwv8Q9/rRD02eSSgvqNKd7LTigM4lGe0Dki3k3So=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\media\images\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance.png" size="579819">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>msPn8TBZdGswXJQIiMvGz8Bfrm9nvic5d8R5rpRrJwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\media\images\thumbnails\200x150.jpg" size="37098">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>88qj4jpQvYpYoxrhyC0kRU+r878A5qQ9vaWD3kcLA4c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Overcomingtaxanesresistance\parameters\parameters.xml" size="212" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l1fEn2+XJLZcDPqM3A70AC9ZTaETZfDrDIB7FxDTZKk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Progressioncriteria\index.html" size="1482">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NJMiYshlvtsZUnYDKNxbuP8lowdAHnZdNAyz4q/lmIE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Progressioncriteria\media\images\JEV_CL_Progressionsequencing_Progressioncriteria.png" size="548337">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ROpY6/xhrPOejiiQStq5Ks2489o0ZwX+qTge9x3Dx7k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Progressioncriteria\media\images\thumbnails\200x150.jpg" size="35245">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A3E1DyvsKmM89hZngf4bTdxqXlr0UPZ7KldtzjuWMYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CL_Progressionsequencing_Progressioncriteria\parameters\parameters.xml" size="204" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hcG4Adu5wDHX3IKz9DtMbRL50MkZlCXIbxo/XtnpSdw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\index.html" size="1475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gaYvYLjb79pUiYwDLcUJu7I6z4SDMKgS2haq+BSLSjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\media\images\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1.png" size="548319">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X6wj0mufLAtM9Y14Q8sJCmKLNV4ThSnAcL0VTc6tbIc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\media\images\thumbnails\200x150.jpg" size="29934">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gzk6yxFpga+z/ZKjzZOr9nGfdfUAlXA8BfO6/EeB834=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors1\parameters\parameters.xml" size="211" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>up8NZNbDEc4/sFon5Gh1sxogYX+VMn0OkDrCn49PpWE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\index.html" size="1475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zEbjex2mC+0ojvLT9ZPf+nm31lIHFm6fXqBmQPJK0Xw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\media\images\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2.png" size="534524">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VHuLDF9GvBKn+uR1LeDHAbJPNQnfAPdB8CAYLxAj0go=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\media\images\thumbnails\200x150.jpg" size="25412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6Ca6RmzHyCVNzsPLoPIDUj1/TUkTIFfAQa285luQM7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors2\parameters\parameters.xml" size="211" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Aus0z8PDumag7bxT5tBT/BF4puoS1kloQFEIv2xvIg4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\index.html" size="1475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cMgI2UHRqMFEOhbSSJWk+Qpw4Cadynaxr3GIwLOCvgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\media\images\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3.png" size="534732">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N36F3Hs3UJAFOiL+W8lOkr3+fZ+yyU7VcX4ObH0mudU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\media\images\thumbnails\200x150.jpg" size="24974">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FNLmvOsL3mM1fhlKrIbF/fK0OWmvBRPBxIUP/OSxvrE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_ConsistentEfficacy-NumberofFactors3\parameters\parameters.xml" size="211" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4/IMBVNNElUGerNKDt6hh4cZAq5M0JvtwmJIHY3FYaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_PrognosticFactors\index.html" size="1426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q89lWqb/wJUxADtyIpLm4J7tGQXYbI1Htt0FtvRby+E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_PrognosticFactors\media\images\JEV_CP_ARResistance_PrognosticFactors.png" size="551450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o+BD839C0xKc14poxBNtRZkTpTnY/uw4ThhfgwZiamo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_PrognosticFactors\media\images\thumbnails\200x150.jpg" size="31345">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FIW2M5b4kyvKLxjsICtXR1/80b7ZWGV8AqfM/2j+tSM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_ARResistance_PrognosticFactors\parameters\parameters.xml" size="193" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Zt67KYXsXHnMxRqA5A7wivNPsBvMlV/PriYuL2xeq/E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\index.html" size="1125">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G8tMZEkzf2jglf1rmQ4z3iRs62RgEkMATDxOqkMo78o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\media\images\JEV_CP_Diseaseheterogeneity_Rathkopfstudy.png" size="538382">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A0MHhFaINCpUULl4oYsaj/I9e4L2DpPy2eQEOH7aHEI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\media\images\thumbnails\200x150.jpg" size="29086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+iFv54XB/YJ3hOvoDeyuElhqe4XmVYj0aur4u3VRiV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Diseaseheterogeneity_Rathkopfstudy\parameters\parameters.xml" size="197" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2fPaRcmsuZt6wgIZ9W88osWgW3B4h7TZjms7RdBAwmU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_DurationofTreatment\index.html" size="1360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+FAvyd89okSlAbPYDs7vynkhUsrj8/gSc9l+rrSxFGo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_DurationofTreatment\media\images\JEV_CP_DOT_DurationofTreatment.png" size="557831">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ouoAtj0BuilQDjSsvgA361ZeMXupS8NXyjARIX5S8I0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_DurationofTreatment\media\images\thumbnails\200x150.jpg" size="37238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>buqmwId7FHqqzG91H/nH7GqQ4ftVWPwts6A+hJCQ718=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_DurationofTreatment\parameters\parameters.xml" size="186" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ccT3NIX4uGdwMtKinX1xbJHx5sHBj+X2v5pteJQxYXg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_ReasonforEOT\index.html" size="1339">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iqwBZEgBD12/92wjgItH/Qu6ZnAudtRzheGHXQfjK3c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_ReasonforEOT\media\images\JEV_CP_DOT_ReasonforEOT.png" size="532095">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cRk4s98wzHuCS8Y+ggeLakztaZIcwboba3hZPc2U0y0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_ReasonforEOT\media\images\thumbnails\200x150.jpg" size="32155">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1nO54BoYEJJFfOpswX/f+HkHNk1qnut7zhV85rE4v2U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_ReasonforEOT\parameters\parameters.xml" size="179" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xMEYgCkGZT47IyomJ+DLizpWtrQIC15Q7QSU5yZ/0SA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_TreatmentCompletion\index.html" size="1360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JIrIE9caUxkzAYZ+IKjuK53T30f2nJlwgBW/rk91iKU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_TreatmentCompletion\media\images\JEV_CP_DOT_TreatmentCompletion.png" size="543532">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4Y4BoL4RLn39KNabezBSfY13WfYh0/h9ryRbdM0H7kI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_TreatmentCompletion\media\images\thumbnails\200x150.jpg" size="40326">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uLEJC4KcHIWM9NxBRPBeK8Ij4lTJhAkzh8xOmCfAhj4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_DOT_TreatmentCompletion\parameters\parameters.xml" size="186" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ecsg39VPn9FN2i6BhqU6mCLTbpwt/zceoCWNIxqn3z8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Home\index.html" size="1967">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ajMG0phzInNYkjM2vjg/H2gJxfYAxTs7bq6RbB0kOqs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Home\media\images\JEV_CP_Home.png" size="2899775">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4i6EOOuT5tqQCFfsrXzddV1nIG0POC1jzQriIWAIUKI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Home\media\images\thumbnails\200x150.jpg" size="34031">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XE/q62+4I0GrSHYNXrnnwAoYQVw0dzAzENsmEwHqb+E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Home\parameters\parameters.xml" size="167" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AMFvMtog+J5TMg+W4Pz0yxR6K8/0CtkVYmXeNaVrN6A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_HematologicAEs\index.html" size="1253">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TTELDQakUyiANkLijq06m8yMhAOdX/DYTCobbRYQd+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_HematologicAEs\media\images\JEV_CP_JevtanaSafety_HematologicAEs.png" size="558956">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NPaPj4qJvvufaoCz71vLaMgOTsc8ibK0TM55dIfQCCg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_HematologicAEs\media\images\thumbnails\200x150.jpg" size="36543">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qHx7pjtkohw1Cnl9qsGACFUOQhREW6z095ATLDkRzHM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_HematologicAEs\parameters\parameters.xml" size="191" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4dKnPzMTRF/1DduoYmhVz3F/OqrsmVcWw+PBn56r5bw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_NonHematologicAEs\index.html" size="1262">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9/cYWLkuwfywbACy2zCcrMwsBesVf0oA92XICaaXbvo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_NonHematologicAEs\media\images\JEV_CP_JevtanaSafety_NonHematologicAEs.png" size="608985">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>omwzLVztOGtBcsKsKC8D0sekFcHnifVZq9iBaPecLRg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_NonHematologicAEs\media\images\thumbnails\200x150.jpg" size="40763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p9b2R+EXtLtKAPEwplOoICe7cdFhlI9eiH1mKRoGdNI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaSafety_NonHematologicAEs\parameters\parameters.xml" size="194" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6bGBYQEajZl3HQap7/Gnf8zfTc5CeoRqad9O5H6ASc0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\index.html" size="1347">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dhp+lqwg0WSCHM3Y1LS2/Xbk+ak6/G/DR1DhYcspBcE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria.png" size="531371">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sfiU9/0YdopPN1uwJ7c/U1GYWWWC4uZLyvWEwtwf4q8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\media\images\thumbnails\200x150.jpg" size="100819">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jc46xQ3hyk/TITszGX8vEJYxDRE9iJLARz56FfxTRTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_DifferentationCriteria\parameters\parameters.xml" size="213" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rG0vILsPvjJ4GUOpArPwepSbzn+wmdVlq2MWZEQjID0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\index.html" size="1602">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hd/Pk3iwDewz/WYzFQvTeDFUDi0xv+txvXOpPJjcxTQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\media\images\JEV_CP_JevtanaStructurevsDocetaxel_Structure.png" size="597177">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RYlUOwcbu/D8/O+pV07v9ZsDY0nL048f8ZaBpxAj3kw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\media\images\thumbnails\200x150.jpg" size="31133">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u3YPeSnYI2N7LKDUtMzN5euge4v3sV4vcFs/kHXF/4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_JevtanaStructurevsDocetaxel_Structure\parameters\parameters.xml" size="200" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AKyW5heIx29TdytV8YJGgYI3k0gd0IqCP2QYRxDQ0r0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\index.html" size="1778">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SI9/Jo7r/w9eAx/zSbiloxEHezAON9ewkdHdanLOgnY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\media\images\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits.png" size="588006">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nzhmDL7edbC5G38SMM/F98qiqrkkbMTaKhdIAE07fLs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\media\images\thumbnails\200x150.jpg" size="32322">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>r5PrBKiv+kwxa2vTA9BZQCSqEojxEWW38FTpt/LTL2I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Jevtanabenefits\parameters\parameters.xml" size="202" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j+dxLDOqdbgy5dYYOUBopWxhMgtuOb+kPoCGgPoMbKY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\index.html" size="1772">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NUevzMSPmQraYhieVUkHUbxpfIUz9MhkkseqmNZGjio=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\media\images\JEV_CP_Morethansurvivalbenefit_MaintainedQOL.png" size="515010">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6wjz7n7KXthsqzEsvuyjcs4QKLU9KNGKf2Yr0VIhOWo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\media\images\thumbnails\200x150.jpg" size="26502">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YzKi7k/GfANd1LpVUkC1gerdXf8fbAOc8RRCmNZ3vvI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_MaintainedQOL\parameters\parameters.xml" size="200" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ytdHBKlqdsdPaH9u0i6tA6hEUyNtOkWc6SkvedU/cgk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\index.html" size="1939">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GxKHJZoucvGBGs/MKuXu0sxjjncTdSJogyQd0EZNR74=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\media\images\JEV_CP_Morethansurvivalbenefit_Overallsurvival.png" size="575832">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3VX+Z2act/nMk5HAGeZxv6kDp5AFwmRdU5hjBbnqf30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\media\images\thumbnails\200x150.jpg" size="33664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1WsmDdfKUcGnRzBe+1EGYbbplpKAZouSzXrovGJmYno=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Overallsurvival\parameters\parameters.xml" size="202" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Th9f+KXfxY1fdwhWe4gStEA/hA7pvH1IdXB9oQEJNII=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Painreduction\index.html" size="1917">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jLyqKwLxUGckau2ALJLEgrZVz/eZYukirOceVlnE1Yg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Painreduction\media\images\JEV_CP_Morethansurvivalbenefit_Painreduction.png" size="631281">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XMSLWRGZ7kfoJWcb9o59vYMdw6MGkZpj1HfBWZIeQII=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Painreduction\media\images\thumbnails\200x150.jpg" size="37111">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CYjKlOnl/ybvS5JViD3/L9fzxMoGFAAa6S2MuPqgtDc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_Painreduction\parameters\parameters.xml" size="200" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ARK/R7u5WFsSa0OEITp6Kat7LH6KWsEGaAJ5YTP4HDw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\index.html" size="1421">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nc9AwHZi/6TDBKFVAwLNf+D//AnRHqNWOp5N9tmdbbQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\js\jquery-1.10.2.min.js" size="93107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\js\popup.js" size="796">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XeZ3NlD4AZCHhZQOpJ3OgR/DhkPmrSDBVYvLivnGIlo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\images\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis.png" size="609627">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vhny/OfhIXT5ZNnvI+/1ieJAjNbuyiKo1HptE4m+KJ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\images\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis_P.png" size="366219">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XXytVS1gv8H9HlRy7832EHF7TV/Erny5EqtPRm2Rwbw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\images\pop_bg.png" size="11426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s0LRJG1nZj78D3RIGpZj3Vj5YUO08yBJn/QDMtk+aww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\media\images\thumbnails\200x150.jpg" size="36317">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WMX8DK4ks7U3Zf7RhB/CIpmsii5CHFmK987O1jnYNJM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_SubgroupAnalysis\parameters\parameters.xml" size="203" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l/7hKjXlBZfmmR0OMNsWpwMvRMV/mkWUEjosQRde/TA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\index.html" size="2222">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wz2gBsrSpP3ntUGfnMyQfSY3lKhS0RDvR3DPf1Tkh4s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\js\jquery-1.10.2.min.js" size="93107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\js\popup.js" size="798">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>m4GZuXmUxfGFrRcpG0Id0DS6PVJNk+Ys9Zl9F/Ejrto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\images\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign.png" size="686049">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>47twHaXvfe04TRtsMccjONE01Eco1CsQTKCmsDElaUg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\images\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign_P.png" size="387750">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W0xoBsjys0z4POFJCfqRTpoBYmRZ2PrxX8iFdsN2pgE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\images\pop_bg.png" size="11426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s0LRJG1nZj78D3RIGpZj3Vj5YUO08yBJn/QDMtk+aww=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\images\thumbnails\200x150.jpg" size="29308">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7LxfU4hqF2aOdrY85pAsqIcbLZQBjYybw1HPyTAUMzk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\media\pdf\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign_P.png" size="387750">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W0xoBsjys0z4POFJCfqRTpoBYmRZ2PrxX8iFdsN2pgE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Morethansurvivalbenefit_TROPICStudyDesign\parameters\parameters.xml" size="204" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p3HOfbTze6UoBSg08iY56xROtf6CQoO+36uAuE3ghAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance1\index.html" size="1103">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cbD37ki5nb1oUaWzpOrsMi5yL/ab8ilTNJsPTiHOnC4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance1\media\images\JEV_CP_PrescriptionetSurveillance1.png" size="531805">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kJDuCd6NX0xpUjyQxcubK6XJY5PWRq1GPbVvO6FLAc4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance1\media\images\thumbnails\200x150.jpg" size="93211">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nooQSNFzWpik2uhELePINk50AMI2fl269QSh6flpbFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance1\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7WHLHGpwodPVrSbZQXRGcLb5uHVmw/NIPecA8zSB0/Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance2\index.html" size="1105">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9liCoKNoKvriIGEJXqtqTwKQexz+Qo6INdqg/sc6No8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance2\media\images\JEV_CP_PrescriptionetSurveillance2.png" size="591174">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bnchnZ2s+5Dsbvf0KEFh1nfYvseqPR0jsPtv7+j8psg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance2\media\images\thumbnails\200x150.jpg" size="93704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1G++Lj8KZLAU33XJbmNSSc3l+BCyOVvUfJKo4oFlhes=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance2\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Om/q4ys0rlNHdSvpr7xju4KZ7VT2zyUO8gwzATruBPg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance3\index.html" size="1105">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zZPeKw074hJvIhOiqGs+XKtSPbC4ryw1H14amUzHXXE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance3\media\images\JEV_CP_PrescriptionetSurveillance3.png" size="576228">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vPIRDRYR+14AxgCzKOLhCkyJdnbM0RkGa8LIKMqeCEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance3\media\images\thumbnails\200x150.jpg" size="85243">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yjOZJYb4hCA/0wyraI8jEgf1Op0azBzIDea+4x7FnDI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance3\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hkBtt2kugGyZZa/a52i3No3qX4xeaRYe2PFG0M9vW4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance4\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kytH8G3YVr5Uju2qO6vuHnFGjCpNlagSf0BFGbIGjhY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance4\media\images\JEV_CP_PrescriptionetSurveillance4.png" size="634584">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zSmgPnDkESpqbgim/ivXEerjDtRtDJT0ZS6mdPBObfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance4\media\images\thumbnails\200x150.jpg" size="97066">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GXmBHpO6gGORx9rqy0D5E/zVRQicSgCbZKtM23NzW6c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance4\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lwKc6dbWri74Y9i8VUf24cwPJcnjnYAHozXQW71J++w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance5\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PYzL/fpUtHjyjx0pSRHmi6FEzckEjtxrrVBpvBe9h7s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance5\media\images\JEV_CP_PrescriptionetSurveillance5.png" size="651392">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7VgSqFu/7ocw50IyZd0pMCvakR7cSSi6CW0g4InJoaE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance5\media\images\thumbnails\200x150.jpg" size="94670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5De5zkXo9VE5hYc18BxwrlzAW2P3RNEDmBOcXNCbeto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance5\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cLNK3S1jJhcBpXQeATYEJeqqkiQzz32HzFao+7nSkqk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance6\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fM7EJvIcTBHJdJSXkX2r78dzD3QN/vlorO09JFiU5xw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance6\media\images\JEV_CP_PrescriptionetSurveillance6.png" size="655257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OeDG4RS1qXDSBBH193aH6ZOK1h3Q7r01VC4oQZNghkE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance6\media\images\thumbnails\200x150.jpg" size="96050">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gSRH7pXlMrh00QA/8NFzIjGZARXn6Y5L11oQOaiHD90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance6\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yHSZAfUbHVcyZZcR1rIfwsXPasq6GTKwwKHgbGQ75cM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance7\index.html" size="949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zYN+KGlT64qoSqj9GZQoIIx/BN2jDAd88VFc+NSlCYk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance7\media\images\JEV_CP_PrescriptionetSurveillance7.png" size="614670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tQfbaLoZrlcdGDuNcRMrL2RJpQZbND4MN558qw3uRo0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance7\media\images\thumbnails\200x150.jpg" size="98403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CQ0T7Db7n/Jw9h7g6pDzTD1Ka0RN51k/5W7Kg5GIHdg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_PrescriptionetSurveillance7\parameters\parameters.xml" size="190" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wHw4TqgSOTNZ1u5ohhv1LWR8/sc15FUBlW2oB39p8vQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\index.html" size="1623">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9GuDzf4ESHMxu1pcvMrqUUFh5Fjap8K1LdBuqnGseac=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\media\images\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance.png" size="578581">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+jjK+H/SevsfhsKQmPyp/u2eKlwghxwr6WqkU1SDaOg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\media\images\thumbnails\200x150.jpg" size="38138">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HNozLKiwOuuYDi1ldeafxweeAhbpF4yX884SsGfnOTM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Overcomingtaxanesresistance\parameters\parameters.xml" size="212" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/BB6PrppMjy+oCEFhcIsJ97BCoyufvCrV6dqExt1/XM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Progressioncriteria\index.html" size="1472">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dhLd4A+k7BDFgToym25EVaxmC88Z4XP8QKXS2NrAwxc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Progressioncriteria\media\images\JEV_CP_Progressionsequencing_Progressioncriteria.png" size="548022">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oGK+XAytQYQJdps+TcMr2ji1O5cRLa+MtGByu/iQbrU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Progressioncriteria\media\images\thumbnails\200x150.jpg" size="36268">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aH1YSkecWQHWjjjKIPPJHIuBvAJfmRiOjLWjlyB3wTg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\JEV_CP_Progressionsequencing_Progressioncriteria\parameters\parameters.xml" size="204" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jsz2ZMBwK36QxybUq1KgIl9QC4wzwkVccn2AAbn9wbs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\js\jquery-1.11.1.min.js" size="95786">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="www\js\vanilla.js" size="0">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

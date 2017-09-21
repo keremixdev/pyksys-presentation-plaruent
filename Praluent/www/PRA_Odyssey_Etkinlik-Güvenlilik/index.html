@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/popup.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/showNote.js"></script>
+  <style>
+    * {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .bubble {
+      transform: scale(0);
+      transition: all .4s;
+    }
+    
+    .bubble.animate {
+      transform: scale(1);
+    }
+    
+    @keyframes ani-bubble {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+    
+    .popupbubble {
+      animation-name: ani-bubble;
+      animation-duration: .4s;
+    }
+    
+    #slider {
+      left: 66px;
+      top: 250px;
+      position: absolute;
+      width: 87%;
+      height: 350px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+    
+    #slider-scroll {
+      position: absolute;
+      right: 41px;
+      top: 740px;
+	  zoom:.5;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="media/images/PRA_Odyssey_Etkinlik-Guvenlilik.jpg" width="1024" height="768" usemap="#Map" />
+  <map name="Map">
+  <area shape="rect" coords="2,247,60,384" href="javascript:window.parent.navigateToSequence('PRA_Odyssey_Etkinlik-Güvenlilik','noanimation')">
+  <area shape="rect" coords="1,386,62,525" href="javascript:window.parent.navigateToSequence('PRA_Odyssey_Sonuclar','noanimation')">
+  <area shape="rect" coords="3,675,75,767" href="javascript:popup('PRA_Odyssey_Etkinlik-Güvenlilik_R.png',0,0);">
+  <area shape="rect" coords="851,9,1011,115" href="javascript:window.parent.navigateToSequence('PRA_Index','noanimation')">
+</map>
+  <div id="slider">
+    <img src="media/images/tablo.png" style="width:100%; display:block;">
+  </div>
+  <div id="slider-scroll">
+    <img src="media/images/slider.png" usemap="#Map2" style="display:block;" />
+    <map name="Map2">
+      <area shape="rect" coords="2,3,46,47" href="javascript:sBottom();">
+      <area shape="rect" coords="-2,105,46,152"  href="javascript:sTop();">
+    </map>
+  </div>
+  <script>
+    var sld = $('#slider');
+
+    function sTop() {
+      sld.stop().animate({ scrollTop: sld.scrollTop() + 200 }, 'slow');
+    }
+
+    function sBottom() {
+      sld.stop().animate({ scrollTop: sld.scrollTop() - 200 }, 'slow');
+    }
+
+    document.ontouchmove = function (e) { e.preventDefault(); };
+
+  </script>
+</body>
+
+</html>
